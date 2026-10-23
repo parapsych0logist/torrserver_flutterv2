@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 Flutter package wrapping TorrServer for macOS desktop via subprocess model.
                        DESC
-  s.homepage         = 'https://github.com/ayman708-UX/torrserver_flutter'
+  s.homepage         = 'https://github.com/aymanisthedude26-png/torrserver_flutter'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'TorrServer Flutter Contributors' => 'contributors@torrserver.local' }
 
@@ -49,8 +49,8 @@ Flutter package wrapping TorrServer for macOS desktop via subprocess model.
       chmod 755 bin/torrserver
     elif [ ! -f "bin/torrserver" ]; then
       echo "Downloading TorrServer macOS compressed archive ($ARCHIVE_NAME) from GitHub Releases..."
-      curl -sL "https://github.com/ayman708-UX/torrserver_flutter/releases/download/v${VERSION}/checksums.txt" -o "bin/checksums.txt" || true
-      curl -sL "https://github.com/ayman708-UX/torrserver_flutter/releases/download/v${VERSION}/${ARCHIVE_NAME}" -o "bin/${ARCHIVE_NAME}" || true
+      curl -sL "https://github.com/aymanisthedude26-png/torrserver_flutter/releases/download/v${VERSION}/checksums.txt" -o "bin/checksums.txt" || true
+      curl -sL "https://github.com/aymanisthedude26-png/torrserver_flutter/releases/download/v${VERSION}/${ARCHIVE_NAME}" -o "bin/${ARCHIVE_NAME}" || true
       if [ -f "bin/${ARCHIVE_NAME}" ] && [ -s "bin/${ARCHIVE_NAME}" ]; then
         if [ -f "bin/checksums.txt" ]; then
           EXPECTED_HASH=$(grep "$ARCHIVE_NAME" bin/checksums.txt | awk '{print $1}')

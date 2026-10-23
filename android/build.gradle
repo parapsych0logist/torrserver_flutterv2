@@ -83,7 +83,7 @@ task downloadTorrServerBinaries {
         def checksumMap = [:]
         if (localBin == null) {
             try {
-                def checksumUrl = "https://github.com/ayman708-UX/torrserver_flutter/releases/download/v${version}/checksums.txt"
+                def checksumUrl = "https://github.com/aymanisthedude26-png/torrserver_flutter/releases/download/v${version}/checksums.txt"
                 def checksumText = new URL(checksumUrl).text
                 checksumText.eachLine { line ->
                     def parts = line.trim().split(/\s+/)
@@ -121,7 +121,7 @@ task downloadTorrServerBinaries {
             } else if (!targetFile.exists()) {
                 println "Downloading compressed TorrServer binary for ${abi} (v${version})..."
                 try {
-                    def url = "https://github.com/ayman708-UX/torrserver_flutter/releases/download/v${version}/${zipName}"
+                    def url = "https://github.com/aymanisthedude26-png/torrserver_flutter/releases/download/v${version}/${zipName}"
                     def tempZip = file("${abiFolder}/temp_${zipName}")
                     new URL(url).withInputStream { i -> tempZip.withOutputStream { it << i } }
 

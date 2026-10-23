@@ -18,8 +18,8 @@ elif [ ! -d "$TARGET_DIR" ]; then
   echo "Fetching TorrServerKit.xcframework from GitHub Releases (v${VERSION})..."
   TEMP_ZIP="$ROOT_DIR/ios/TorrServerKit.xcframework.zip"
   CHECKSUMS_FILE="$ROOT_DIR/ios/checksums.txt"
-  curl -sL "https://github.com/ayman708-UX/torrserver_flutter/releases/download/v${VERSION}/checksums.txt" -o "$CHECKSUMS_FILE" || true
-  curl -sL "https://github.com/ayman708-UX/torrserver_flutter/releases/download/v${VERSION}/TorrServerKit.xcframework.zip" -o "$TEMP_ZIP" || true
+  curl -sL "https://github.com/aymanisthedude26-png/torrserver_flutter/releases/download/v${VERSION}/checksums.txt" -o "$CHECKSUMS_FILE" || true
+  curl -sL "https://github.com/aymanisthedude26-png/torrserver_flutter/releases/download/v${VERSION}/TorrServerKit.xcframework.zip" -o "$TEMP_ZIP" || true
   if [ -f "$TEMP_ZIP" ]; then
     if [ -f "$CHECKSUMS_FILE" ]; then
       EXPECTED_HASH=$(grep "TorrServerKit.xcframework.zip" "$CHECKSUMS_FILE" | awk '{print $1}')
