@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.8
+
+- Update repository URLs and binary release download mirrors to `https://github.com/aymanisthedude26-png/torrserver_flutter`.
+- Automated binary distribution and SHA-256 checksum verification updated for `v0.0.8`.
+- Improved platform build scripts across Windows, Linux, macOS, Android, and iOS.
+
 ## 0.0.7
 
 - Fix macOS Apple Silicon and desktop binary discovery out of the box:

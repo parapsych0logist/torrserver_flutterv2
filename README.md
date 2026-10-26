@@ -45,7 +45,7 @@ Add `torrserver_flutter` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  torrserver_flutter: ^1.0.0
+  torrserver_flutter: ^0.0.8
 ```
 
 ### Air-Gapped / Offline Binaries
