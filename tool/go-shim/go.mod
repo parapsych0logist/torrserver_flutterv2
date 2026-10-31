@@ -1,4 +1,4 @@
-module github.com/aymanisthedude26-png/torrserver_flutter/tool/go-shim
+module github.com/parapsych0logist/torrserver_flutterv2/tool/go-shim
 
 go 1.25.7
 

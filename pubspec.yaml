@@ -1,9 +1,9 @@
 name: torrserver_flutter
 description: A Flutter package wrapping TorrServer for streaming torrents via HTTP API on Windows, Linux, macOS, Android, and iOS.
 version: 0.0.8
-homepage: https://github.com/aymanisthedude26-png/torrserver_flutter
-repository: https://github.com/aymanisthedude26-png/torrserver_flutter
-issue_tracker: https://github.com/aymanisthedude26-png/torrserver_flutter/issues
+homepage: https://github.com/parapsych0logist/torrserver_flutterv2
+repository: https://github.com/parapsych0logist/torrserver_flutterv2
+issue_tracker: https://github.com/parapsych0logist/torrserver_flutterv2/issues
 
 environment:
   sdk: '>=3.0.0 <4.0.0'

@@ -50,7 +50,7 @@ elseif(EXISTS "${LOCAL_BIN_DIR}/${TORRSERVER_DEST_NAME}")
   file(COPY "${LOCAL_BIN_DIR}/${TORRSERVER_DEST_NAME}" DESTINATION "${TORRSERVER_CACHE_DIR}")
 elseif(NOT EXISTS "${TORRSERVER_CACHED_BIN}")
   message(STATUS "Downloading compressed TorrServer binary from GitHub Releases (v${TORRSERVER_VERSION})...")
-  set(DOWNLOAD_URL "https://github.com/aymanisthedude26-png/torrserver_flutter/releases/download/v${TORRSERVER_VERSION}/${TORRSERVER_ZIP_NAME}")
+  set(DOWNLOAD_URL "https://github.com/parapsych0logist/torrserver_flutterv2/releases/download/v${TORRSERVER_VERSION}/${TORRSERVER_ZIP_NAME}")
   file(DOWNLOAD "${DOWNLOAD_URL}" "${TORRSERVER_CACHE_DIR}/${TORRSERVER_ZIP_NAME}"
     STATUS DOWNLOAD_STATUS
     LOG DOWNLOAD_LOG
@@ -58,7 +58,7 @@ elseif(NOT EXISTS "${TORRSERVER_CACHED_BIN}")
   list(GET DOWNLOAD_STATUS 0 STATUS_CODE)
   if(STATUS_CODE EQUAL 0)
     # Verify SHA-256 checksum against release checksums.txt if available
-    file(DOWNLOAD "https://github.com/aymanisthedude26-png/torrserver_flutter/releases/download/v${TORRSERVER_VERSION}/checksums.txt"
+    file(DOWNLOAD "https://github.com/parapsych0logist/torrserver_flutterv2/releases/download/v${TORRSERVER_VERSION}/checksums.txt"
       "${TORRSERVER_CACHE_DIR}/checksums.txt"
       STATUS CHECKSUM_STATUS
     )
